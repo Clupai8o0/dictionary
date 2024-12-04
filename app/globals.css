@@ -65,7 +65,13 @@ body {
 
 @font-face {
 	font-family: Inconsolata;
-	src: url(/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf);
+	font-weight: 700;
+	src: url(/fonts/inconsolata/static/Inconsolata-Bold.ttf);
+}
+@font-face {
+	font-family: Inconsolata;
+	font-weight: 500;
+	src: url(/fonts/inconsolata/static/Inconsolata-Regular.ttf);
 }
 
 @font-face {
@@ -81,13 +87,19 @@ body {
 
 @font-face {
 	font-family: Lora;
-	src: url(/fonts/lora/Lora-VariableFont_wght.ttf);
+	font-weight: 700;
+	src: url(/fonts/lora/static/Lora-Bold.ttf);
 }
-
 @font-face {
 	font-family: Lora;
+	font-weight: 500;
+	src: url(/fonts/lora/static/Lora-Regular.ttf);
+}
+@font-face {
+	font-family: Lora;
+	font-weight: 700;
 	font-style: italic;
-	src: url(/fonts/lora/Lora-Italic-VariableFont_wght.ttf);
+	src: url(/fonts/lora/static/Lora-BoldItalic.ttf);
 }
 
 .sans-serif {

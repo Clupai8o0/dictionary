@@ -31,14 +31,14 @@ const FontMenu = () => {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button variant="ghost">
-					<span className="font-bold">{fontName}</span>
+				<Button variant="ghost" className="md:space-x-2">
+					<span className="font-bold text-sm md:text-lg">{fontName}</span>
 					<span>
 						<img src="images/icon-arrow-down.svg" alt="Down arrow" />
 					</span>
 				</Button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent align="end" className="font-bold">
+			<DropdownMenuContent align="end" className="text-sm md:text-lg">
 				<DropdownMenuItem
 					onClick={() => setFont("sans-serif")}
 					className="sans-serif"

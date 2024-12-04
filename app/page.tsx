@@ -9,7 +9,7 @@ function Home() {
 	const font = useFontState((state) => state.font);
 
 	return (
-		<div className={clsx("px-6", font)}>
+		<div className={clsx("px-6 md:px-8", font)}>
 			<Navbar />
 			<main>
 				<SearchBar />
