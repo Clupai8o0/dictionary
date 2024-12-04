@@ -7,7 +7,7 @@ import FontMenu from "./font-menu";
 
 const Navbar = () => {
 	return (
-		<nav className="w-full flex justify-between items-center py-6 px-4">
+		<nav className="w-full flex justify-between items-center py-6">
 			<img src="/images/logo.svg" alt="dictionary logo" />
 
 			<div className="flex items-center gap-0">

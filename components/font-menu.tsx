@@ -5,20 +5,55 @@ import {
 	DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
+import { useFontState } from "@/lib/state";
+import { useEffect, useState } from "react";
 
 const FontMenu = () => {
+	const font = useFontState((state) => state.font);
+	const setFont = useFontState((state) => state.setFont);
+
+	const [fontName, setFontName] = useState("");
+
+	useEffect(() => {
+		switch (font) {
+			case "sans-serif":
+				setFontName("Sans Serif");
+				break;
+			case "serif":
+				setFontName("Serif");
+				break;
+			case "monospace":
+				setFontName("Mono");
+				break;
+		}
+	}, [font]);
+
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
 				<Button variant="ghost">
-					<span>Sans Serif</span>
+					<span className="font-bold">{fontName}</span>
 					<span>
 						<img src="images/icon-arrow-down.svg" alt="Down arrow" />
 					</span>
 				</Button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent align="end">
-				<DropdownMenuItem onClick={() => {}}>Light</DropdownMenuItem>
+			<DropdownMenuContent align="end" className="font-bold">
+				<DropdownMenuItem
+					onClick={() => setFont("sans-serif")}
+					className="sans-serif"
+				>
+					Sans Serif
+				</DropdownMenuItem>
+				<DropdownMenuItem onClick={() => setFont("serif")} className="serif">
+					Serif
+				</DropdownMenuItem>
+				<DropdownMenuItem
+					onClick={() => setFont("monospace")}
+					className="monospace"
+				>
+					Mono
+				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>
 	);

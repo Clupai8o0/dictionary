@@ -14,7 +14,7 @@ body {
 		--card-foreground: 20 14.3% 4.1%;
 		--popover: 0 0% 100%;
 		--popover-foreground: 20 14.3% 4.1%;
-		--primary: 24 9.8% 10%;
+		--primary: 274 82% 60%;
 		--primary-foreground: 60 9.1% 97.8%;
 		--secondary: 60 4.8% 95.9%;
 		--secondary-foreground: 24 9.8% 10%;
@@ -70,7 +70,13 @@ body {
 
 @font-face {
 	font-family: Inter;
-	src: url(/fonts/inter/Inter-VariaboleFont_slnt,wght.ttf);
+	font-weight: 500;
+	src: url(/fonts/inter/static/Inter-Regular.ttf);
+}
+@font-face {
+	font-family: Inter;
+	font-weight: 700;
+	src: url(/fonts/inter/static/Inter-Bold.ttf);
 }
 
 @font-face {
