@@ -38,19 +38,22 @@ const FontMenu = () => {
 					</span>
 				</Button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent align="end" className="text-sm md:text-lg">
+			<DropdownMenuContent align="end" className="font-bold">
 				<DropdownMenuItem
 					onClick={() => setFont("sans-serif")}
-					className="sans-serif"
+					className="sans-serif text-sm md:text-lg"
 				>
 					Sans Serif
 				</DropdownMenuItem>
-				<DropdownMenuItem onClick={() => setFont("serif")} className="serif">
+				<DropdownMenuItem
+					onClick={() => setFont("serif")}
+					className="serif text-sm md:text-lg"
+				>
 					Serif
 				</DropdownMenuItem>
 				<DropdownMenuItem
 					onClick={() => setFont("monospace")}
-					className="monospace"
+					className="monospace text-sm md:text-lg"
 				>
 					Mono
 				</DropdownMenuItem>

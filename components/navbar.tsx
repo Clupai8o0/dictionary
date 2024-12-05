@@ -12,7 +12,7 @@ const Navbar = () => {
 
 			<div className="flex items-center gap-0 md:gap-2">
 				<FontMenu />
-				<Separator orientation="vertical" className="h-8 mr-3 md:mr-4" />
+				<Separator orientation="vertical" className="h-10 mr-3 md:mr-4" />
 				<ModeToggle />
 			</div>
 		</nav>

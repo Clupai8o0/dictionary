@@ -36,7 +36,7 @@ body {
 		--switch: 0 0% 51%;
 	}
 	.dark {
-		--background: 20 14.3% 4.1%;
+		--background: 0 0% 2%;
 		--foreground: 60 9.1% 97.8%;
 		--card: 20 14.3% 4.1%;
 		--card-foreground: 60 9.1% 97.8%;
@@ -69,6 +69,7 @@ body {
 	src: url(/fonts/inconsolata/static/Inconsolata-Bold.ttf);
 }
 @font-face {
+
 	font-family: Inconsolata;
 	font-weight: 500;
 	src: url(/fonts/inconsolata/static/Inconsolata-Regular.ttf);

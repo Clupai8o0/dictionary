@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Search } from "./ui/input";
 
 const SearchBar = () => {
-  return (
-    <div>SearchBar</div>
-  )
-}
+	return (
+		<form>
+			<Search type="text" />
+		</form>
+	);
+};
 
-export default SearchBar
+export default SearchBar;
