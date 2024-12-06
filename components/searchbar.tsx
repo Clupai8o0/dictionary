@@ -4,7 +4,7 @@ import { Search } from "./ui/input";
 const SearchBar = () => {
 	return (
 		<form>
-			<Search type="text" />
+			<Search type="text" placeholder="Search for any word..." />
 		</form>
 	);
 };
