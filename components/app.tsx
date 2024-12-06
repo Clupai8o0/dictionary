@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import { Separator } from "./ui/separator";
 
 const App = () => {
 	return (
@@ -18,7 +19,15 @@ const App = () => {
 				</div>
 			</header>
 
-			<section></section>
+			<section>
+				<header className="flex gap-4 items-center">
+					<h2 className="body-m italic font-bold">noun</h2>
+					<div className="w-full">
+						<Separator />
+					</div>
+				</header>
+				
+			</section>
 		</main>
 	);
 };
