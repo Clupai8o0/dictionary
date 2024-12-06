@@ -1,22 +1,25 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Switch } from "./ui/switch";
 import { useTheme } from "next-themes";
 
 const ModeToggle = () => {
 	const { setTheme, theme } = useTheme();
+	const [checked, setChecked] = useState(false)
 
 	useEffect(() => {
 		if (theme === "system") setTheme("light");
+		if (theme === "dark") setChecked(true);
+		else setChecked(false);
 	}, [theme]);
 
 	return (
 		<div className="flex items-center gap-3">
 			<Switch
-				checked={theme === "dark"}
-				onCheckedChange={(checked) => {
-					if (checked) setTheme("dark");
+				checked={checked}
+				onCheckedChange={(_checked) => {
+					if (_checked) setTheme("dark");
 					else setTheme("light");
 				}}
 			/>
@@ -28,7 +31,7 @@ const ModeToggle = () => {
 			>
 				<path
 					fill="none"
-					stroke={theme === "dark" ? "#A445ED" : "#838383"}
+					stroke={checked ? "#A445ED" : "#838383"}
 					strokeLinecap="round"
 					strokeLinejoin="round"
 					strokeWidth="1.5"

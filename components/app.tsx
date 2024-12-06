@@ -11,7 +11,7 @@ const App = () => {
 					<span className="text-primary body-m">/ˈkiːbɔːd/</span>
 				</div>
 				<div className="flex items-center">
-					<img src="/images/icon-play.svg" alt="play" className="h-12 w-12" />
+					<img src="/images/icon-play.svg" alt="play" className="h-12 md:h-20 w-12 md:w-20" />
 					<audio
 						src="https://api.dictionaryapi.dev/media/pronunciations/en/keyboard-us.mp3"
 						hidden
