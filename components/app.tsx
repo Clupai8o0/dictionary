@@ -65,7 +65,7 @@ const App = () => {
 						{meaning.synonyms && (
 							<div className="flex gap-6">
 								<h1 className="text-base text-[#757575]">Synonyms</h1>
-								<ul className="text-base font-bold">
+								<ul className="text-base font-bold flex gap-2 flex-wrap">
 									{meaning.synonyms.map((synonym) => (
 										<li
 											key={generateKey()}
@@ -80,7 +80,7 @@ const App = () => {
 						{meaning.antonyms && (
 							<div className="flex gap-6">
 								<h1 className="text-base text-[#757575]">Antonyms</h1>
-								<ul className="text-base font-bold">
+								<ul className="text-base font-bold flex gap-2 flex-wrap">
 									{meaning.antonyms.map((antonym) => (
 										<li
 											key={generateKey()}
